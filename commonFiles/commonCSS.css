@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #dcdcff;
+    background-image: radial-gradient(
+    at 0% 0%, 
+    #D1F5FF 0%, 
+    #3DCDF5 100%
+    );
+    background-attachment: fixed;
+}
+
+#header {
+    height:100px;
+    width: 100vw;
+    background-color: #F0FBFC;
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    font-size: 50px;
+    color: #7bc6da;
+    text-shadow: 2px 2px 2px rgb(15, 4, 58);
+    font-family: 'Zilla Slab', serif;
+    margin-left: 20px;
+}
+
+#searchBar {
+    height: 40px;
+    border: 1px solid black;
+    padding: 0;
+    margin-left: 60px;
+    font-size: 15px;
+    border-right: 0;
+}
+
+#searchButton {
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #D1F5FF, #3DCDF5);
+    color: #01161b;
+    font-family: "Zilla Slab", serif;
+}
+
+.dropdownButtons {
+    background: none;
+    border: none;
+    margin-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Zilla Slab", serif;
+}
+
+#popularButton {
+    margin-left: 90px;
+}
+
+#menuPopular {
+    position: relative;
+    display: inline-block; /* Or flex */
+}
+
+#dropdownContentPopular {
+    overflow: hidden;
+    width: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #ededed;
+    transition: height 0.3s;
+    flex-direction: column;
+    height: 180px;
+    margin-left: 82px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 3px 0px black;
+}
+
+.popularContentButtons {
+    background: none;
+    border: none;
+    font-family: "Zilla Slab", serif;
+    font-size: 17px;
+    margin-top: 10px;
+}
