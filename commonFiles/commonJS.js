@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
    if (menu && dropdown) {
         menu.addEventListener('mouseenter', () => {
-            dropdown.style.width = '250px';
+            dropdown.style.width = '120px';
         });
 
         menu.addEventListener('mouseleave', (e) => {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         dropdown.addEventListener('mouseenter', () => {
-            dropdown.style.width = '250px';
+            dropdown.style.width = '120px';
         });
 
         dropdown.addEventListener('mouseleave', (e) => {
