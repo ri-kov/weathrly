@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-   if (menu && dropdown) {
+
+    /*if (menu && dropdown) {
         menu.addEventListener('mouseenter', () => {
             dropdown.style.width = '120px';
         });
@@ -41,4 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
                 dropdown.style.width = '0';
             }
         });
-    }
+    }*/

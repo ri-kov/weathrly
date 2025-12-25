@@ -16,11 +16,9 @@ body {
 }
 
 #header {
-    height:100px;
-    width: 100vw;
     align-items: center;
     display: flex;
-    color: white;
+    margin-top: -10px;
 }
 
 h1 {
@@ -54,11 +52,11 @@ select {
 }
 
 #searchButton {
-    height: 40px;
+    height: 42px;
     border: 1px solid white;
     cursor: pointer;
-    background-image: linear-gradient(to bottom, #3d2599, rgb(1, 3, 107));
-    color: #01161b;
+    background-image: linear-gradient(to bottom, rgb(1, 3, 107), rgb(0, 1, 51));
+    color: #778dcc;
     font-family: "Zilla Slab", serif;
 }
 
@@ -73,12 +71,16 @@ select {
 }
 
 #popularButton {
-    margin-left: 90px;
+    margin-left: -30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #menuPopular {
     position: relative;
-    display: inline-block; /* Or flex */
+    display: inline-block;
+    width: 80px;
+    margin-left: 130px;
 }
 
 #dropdownContentPopular {
@@ -88,12 +90,12 @@ select {
     top: 100%;
     left: 0;
     z-index: 10;
-    background-color: #ededed;
+    background-color: #a5adca;
     transition: height 0.3s;
     flex-direction: column;
     height: 180px;
-    margin-left: 82px;
-    margin-top: 20px;
+    margin-left: -36px;
+    margin-top: 0px;
     box-shadow: 1px 1px 3px 0px black;
 }
 
@@ -103,7 +105,22 @@ select {
     font-family: "Zilla Slab", serif;
     font-size: 17px;
     margin-top: 10px;
+    display: block;
 }
+
+#dropdownContentPopular a:hover {
+    background-color: #000000;
+}
+
+#dropdownContentPopular a button.popularContentButtons {
+    background-color: transparent !important; /* Use !important only as a last resort */
+    border: none !important;
+}
+
+#dropdownContentPopular a {
+    display: block; 
+}
+
 
 @media (max-width: 600px) {
   body {
